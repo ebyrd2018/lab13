@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tab Components in Vue</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		
+    <script type="text/javascript" src="https://unpkg.com/vue@2.5.9/dist/vue.js"></script>
+		
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){
+        $('ul.tabs').tabs();
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+			
+      <div id="main">
+
+        <tabs>
+          <tab name="Tab1" v-bind:selected="true">
+            <h5>This is the first tab</h5>
+            <p>Info on the first tab</p>
+          </tab>
+
+          <tab name="Tab2">
+            <h5>This is the second tab</h5>
+            <p>Info on the second tab</p>
+          </tab>
+
+          <tab name="Tab3">
+            <h5>This is the third tab</h5>
+            <p>Info on the third tab</p>
+          </tab>
+        </tabs>
+
+      </div> <!-- end of div#main -->
+      <script type="text/javascript" src="main.js"></script>
+			
+    </div> <!-- end of div.container -->
+  </body>	
+</html>
